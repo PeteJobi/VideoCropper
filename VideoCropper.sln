@@ -5,6 +5,10 @@ VisualStudioVersion = 17.14.36203.30
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoCropper", "VideoCropper\VideoCropper.csproj", "{4BE8E34B-3598-4B78-A580-0AED9CCD79AA}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DraggerResizer", "DraggerResizerWinUI\DraggerResizer.shproj", "{26BA5B05-9F47-4FB6-873D-CA48909F653E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "VideoCropperPage", "VideoCropperPageWinUI\VideoCropperPage.shproj", "{B939521D-3D99-4A7F-8FF5-1472EA1A0B49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -39,5 +43,11 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6ACA061-C6E7-4483-8BF1-6330BF0F9FAC}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DraggerResizerWinUI\DraggerResizer.projitems*{26ba5b05-9f47-4fb6-873d-ca48909f653e}*SharedItemsImports = 13
+		DraggerResizerWinUI\DraggerResizer.projitems*{4be8e34b-3598-4b78-a580-0aed9ccd79aa}*SharedItemsImports = 5
+		VideoCropperPageWinUI\VideoCropperPage.projitems*{4be8e34b-3598-4b78-a580-0aed9ccd79aa}*SharedItemsImports = 5
+		VideoCropperPageWinUI\VideoCropperPage.projitems*{b939521d-3d99-4a7f-8ff5-1472ea1a0b49}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,6 @@
+[submodule "DraggerResizerWinUI"]
+	path = DraggerResizerWinUI
+	url = https://github.com/PeteJobi/DraggerResizerWinUI.git
+[submodule "VideoCropperPageWinUI"]
+	path = VideoCropperPageWinUI
+	url = https://github.com/PeteJobi/VideoCropperPageWinUI.git

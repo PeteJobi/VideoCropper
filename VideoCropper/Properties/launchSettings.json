@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Cropper (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Cropper (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

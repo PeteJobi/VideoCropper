@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ActiveDebugProfile>Cropper (Package)</ActiveDebugProfile>
+    <Source>C:\Users\Peter Egunjobi\Pictures\EncircledPIERound.png</Source>
+    <SmallTileSource>C:\Users\Peter Egunjobi\Pictures\EncircledPIERound.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Peter Egunjobi\Pictures\EncircledPIERound.png</MediumTileSource>
+    <WideTileSource>C:\Users\Peter Egunjobi\Pictures\EncircledInfinity.jpg</WideTileSource>
+    <LargeTileSource>C:\Users\Peter Egunjobi\Pictures\EncircledPIERound.png</LargeTileSource>
+    <AppIconSource>C:\Users\Peter Egunjobi\Pictures\EncircledPIERound.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Peter Egunjobi\Pictures\EncircledInfinityResized.jpg</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Peter Egunjobi\Pictures\EncircledPIERound.png</PackageLogoSource>
+    <BadgeLogoSource>C:\Users\Peter Egunjobi\Pictures\EncircledPIERoundSmall.png</BadgeLogoSource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <Page Update="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <None Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>

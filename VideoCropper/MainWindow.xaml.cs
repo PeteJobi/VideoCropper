@@ -31,6 +31,7 @@ namespace Cropper
             InitializeComponent();
             Window = this;
             AppWindow.Resize(new SizeInt32(1800, AppWindow.Size.Height));
+            AppWindow.SetTitleBarIcon("Assets/EncircledPIERound.ico");
             WindowFrame.Navigate(typeof(MainPage));
         }
     }

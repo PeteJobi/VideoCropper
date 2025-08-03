@@ -15,12 +15,11 @@ using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage.Pickers;
-using VideoCropper;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace Cropper
+namespace VideoCropper
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -78,7 +77,15 @@ namespace Cropper
                 await ErrorDialog.ShowAsync();
                 return;
             }
-            Frame.Navigate(typeof(VideoCropperPage), new CropperProps { FfmpegPath = ffmpegPath, VideoPath = videoPath });
+            Frame.Navigate(typeof(VideoCropperPage), new CropperProps { FfmpegPath = ffmpegPath, VideoPath = videoPath, TypeToNavigateTo = typeof(MainPage).FullName});
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            if (e.Parameter is List<string> croppedFiles)
+            {
+                Console.WriteLine($"{croppedFiles.Count} files were generated");
+            }
         }
     }
 }

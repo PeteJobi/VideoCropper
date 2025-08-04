@@ -23,3 +23,5 @@ As you drag and resize, the coordinates of the frame will reflect in the number 
 When you're done setting up the crop frame, click the "**Crop!**" button to start cropping. A progress bar showing the progress of the crop operation will show up. While the process is on-going, you can choose to pause or cancel it. Once the process is done, you can click the "**View**" button to view the output. 
 
 The output file will be created in the same folder and it will have the same file name with "__CROPPED_" appended to it. Be warned that if such a file exists, it will be deleted.
+
+Click the **Go back** button to return to the file selection page.

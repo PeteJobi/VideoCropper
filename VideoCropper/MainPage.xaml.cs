@@ -80,11 +80,11 @@ namespace VideoCropper
             Frame.Navigate(typeof(VideoCropperPage), new CropperProps { FfmpegPath = ffmpegPath, VideoPath = videoPath, TypeToNavigateTo = typeof(MainPage).FullName});
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (e.Parameter is List<string> croppedFiles)
+            if (e.Parameter is string outputFile)
             {
-                Console.WriteLine($"{croppedFiles.Count} files were generated");
+                Console.WriteLine($"Path of output file is {outputFile}");
             }
         }
     }

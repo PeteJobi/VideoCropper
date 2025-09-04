@@ -20,6 +20,10 @@ When you open the program, you will be prompted to upload a video. Once that is 
 
 As you drag and resize, the coordinates of the frame will reflect in the number boxes labelled **X**, **Y**, **Width** and **Height**. If you want to be exact, you can manually change any of these values and the frame will update to reflect your input. There are simple video controls that can help you see how parts of the video look within the frame.
 
+If you want to see more clearly what's in the crop frame, especially if you intend to crop a small portion, you can tick the **Zoom into frame** checkbox.
+
 When you're done setting up the crop frame, click the "**Crop!**" button to start cropping. A progress bar showing the progress of the crop operation will show up. While the process is on-going, you can choose to pause or cancel it. Once the process is done, you can click the "**View**" button to view the output. 
 
 The output file will be created in the same folder and it will have the same file name with "__CROPPED_" appended to it. Be warned that if such a file exists, it will be deleted.
+
+Click the **Go back** button to return to the file selection page.

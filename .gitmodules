@@ -4,3 +4,6 @@
 [submodule "VideoCropperPageWinUI"]
 	path = VideoCropperPageWinUI
 	url = https://github.com/PeteJobi/VideoCropperPageWinUI.git
+[submodule "TimelineWinUI"]
+	path = TimelineWinUI
+	url = https://github.com/PeteJobi/TimelineWinUI.git

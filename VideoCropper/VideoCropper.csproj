@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
@@ -81,4 +81,5 @@
   </PropertyGroup>
   <Import Project="..\DraggerResizerWinUI\DraggerResizer.projitems" Label="Shared" />
   <Import Project="..\VideoCropperPageWinUI\VideoCropperPage.projitems" Label="Shared" />
+  <Import Project="..\TimelineWinUI\Timeline.projitems" Label="Shared" />
 </Project>

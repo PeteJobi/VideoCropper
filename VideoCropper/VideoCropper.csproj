@@ -82,4 +82,5 @@
   <Import Project="..\DraggerResizerWinUI\DraggerResizer.projitems" Label="Shared" />
   <Import Project="..\VideoCropperPageWinUI\VideoCropperPage.projitems" Label="Shared" />
   <Import Project="..\TimelineWinUI\Timeline.projitems" Label="Shared" />
+  <Import Project="..\WinUIShared\WinUIShared.projitems" Label="Shared" />
 </Project>

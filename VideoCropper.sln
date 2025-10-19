@@ -11,6 +11,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "VideoCropperPage", "VideoCr
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Timeline", "TimelineWinUI\Timeline.shproj", "{8A87FF88-D9FA-499F-971F-6A8B191EB7C5}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WinUIShared", "WinUIShared\WinUIShared.shproj", "{EAEDEDF3-CC91-4D2B-8476-35DD81F8D00A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -51,7 +53,9 @@ Global
 		DraggerResizerWinUI\DraggerResizer.projitems*{4be8e34b-3598-4b78-a580-0aed9ccd79aa}*SharedItemsImports = 5
 		TimelineWinUI\Timeline.projitems*{4be8e34b-3598-4b78-a580-0aed9ccd79aa}*SharedItemsImports = 5
 		VideoCropperPageWinUI\VideoCropperPage.projitems*{4be8e34b-3598-4b78-a580-0aed9ccd79aa}*SharedItemsImports = 5
+		WinUIShared\WinUIShared.projitems*{4be8e34b-3598-4b78-a580-0aed9ccd79aa}*SharedItemsImports = 5
 		TimelineWinUI\Timeline.projitems*{8a87ff88-d9fa-499f-971f-6a8b191eb7c5}*SharedItemsImports = 13
 		VideoCropperPageWinUI\VideoCropperPage.projitems*{b939521d-3d99-4a7f-8ff5-1472ea1a0b49}*SharedItemsImports = 13
+		WinUIShared\WinUIShared.projitems*{eaededf3-cc91-4d2b-8476-35dd81f8d00a}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

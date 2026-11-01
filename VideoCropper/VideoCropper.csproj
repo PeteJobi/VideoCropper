@@ -12,15 +12,6 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <ItemGroup>
-    <None Remove="Assets\BadgeLogo.scale-100.png" />
-    <None Remove="Assets\BadgeLogo.scale-125.png" />
-    <None Remove="Assets\BadgeLogo.scale-150.png" />
-    <None Remove="Assets\BadgeLogo.scale-200.png" />
-    <None Remove="Assets\BadgeLogo.scale-400.png" />
-    <None Remove="Assets\ffmpeg.exe" />
-    <None Remove="MainPage.xaml" />
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />

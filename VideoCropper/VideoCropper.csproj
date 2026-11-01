@@ -72,6 +72,7 @@
     <AppInstallerUri>C:\</AppInstallerUri>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <PackageCertificateKeyFile>VideoCropper_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxPackageDir>AppPackages\</AppxPackageDir>
     <!--<PublishTrimmed Condition="'$(Configuration)' != 'Debug'">True</PublishTrimmed>-->
   </PropertyGroup>
   <Import Project="..\DraggerResizerWinUI\DraggerResizer.projitems" Label="Shared" />

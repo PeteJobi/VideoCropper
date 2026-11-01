@@ -26,62 +26,35 @@ namespace VideoCropper
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private string ffmpegLocation;
+        private TitleBar _titleBar;
+        private string? _ffmpegPath;
+        private readonly EventHandler<string> _fileDropped;
+        private readonly EventHandler<string> _ffmpegSet;
+        public readonly string[] supportedTypes = [".mkv", ".mp4", ".mov", ".avi"];
+
         public MainPage()
         {
+            _fileDropped = (_, path) => GoToCropper(path);
+            _ffmpegSet = (_, path) => _ffmpegPath = path;
             InitializeComponent();
         }
 
-        private async void MainPage_OnDrop(object sender, DragEventArgs e)
+        private void GoToCropper(string videoPath)
         {
-            if (e.DataView.Contains(StandardDataFormats.StorageItems))
-            {
-                var items = await e.DataView.GetStorageItemsAsync();
-                GoToCropper(items[0].Path);
-            }
-        }
-
-        private void MainPage_OnDragOver(object sender, DragEventArgs e)
-        {
-            e.AcceptedOperation = DataPackageOperation.Copy;
-        }
-
-        private async void ShowFilePicker(object sender, RoutedEventArgs e)
-        {
-            string[] allSupportedTypes = [".mkv", ".mp4"];
-            var filePicker = new FileOpenPicker();
-            filePicker.SuggestedStartLocation = PickerLocationId.VideosLibrary;
-            foreach (var supportedType in allSupportedTypes)
-            {
-                filePicker.FileTypeFilter.Add(supportedType);
-            }
-            var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(MainWindow.Window);
-            WinRT.Interop.InitializeWithWindow.Initialize(filePicker, hwnd);
-            var file = await filePicker.PickSingleFileAsync();
-            GoToCropper(file.Path);
-        }
-
-        private async void GoToCropper(string videoPath)
-        {
-            var ffmpegPath = string.Empty;
-            try
-            {
-                ffmpegPath = Path.Join(Package.Current.InstalledLocation.Path, "Assets/ffmpeg.exe");
-            }
-            catch (InvalidOperationException)
-            {
-                ffmpegPath = "Assets/ffmpeg.exe";
-            }
-            if (!File.Exists(ffmpegPath))
-            {
-                await ErrorDialog.ShowAsync();
-                return;
-            }
-            Frame.Navigate(typeof(VideoCropperPage), new CropperProps { FfmpegPath = ffmpegPath, VideoPath = videoPath, TypeToNavigateTo = typeof(MainPage).FullName});
+            _ffmpegPath = videoPath;
+            Frame.Navigate(typeof(VideoCropperPage), new CropperProps { FfmpegPath = _ffmpegPath, VideoPath = videoPath, TypeToNavigateTo = typeof(MainPage).FullName});
+            _titleBar.IsBackButtonVisible = true;
         }
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
+            if (e.Parameter is TitleBar titleBar)
+            {
+                _titleBar = titleBar;
+                return;
+            }
+            _titleBar.IsBackButtonVisible = false;
+
             if (e.Parameter is string outputFile)
             {
                 Console.WriteLine($"Path of output file is {outputFile}");

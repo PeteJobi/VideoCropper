@@ -1,7 +1,7 @@
 # Video Cropper
 This repo provides a Windows desktop application for cropping videos. Only supports Windows 10 and 11 (not tested on other versions of Windows). Powered by FFMPEG.
 
-<img width="1791" height="1023" alt="Screenshot 2025-07-28 103546" src="https://github.com/user-attachments/assets/e40e106c-9399-4eb4-87e7-f93264d6ee8b" />
+<img width="1786" height="1016" alt="image" src="https://github.com/user-attachments/assets/4a5fe565-a80c-4370-9074-fac48e98429c" />
 
 ## How to build
 You need to have at least .NET 9 runtime installed to build the software. Download the latest runtime [here](https://dotnet.microsoft.com/en-us/download). If you're not sure which one to download, try [.NET 9.0 Version 9.0.203](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.203-windows-x64-installer)
